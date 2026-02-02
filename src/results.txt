@@ -1,0 +1,931 @@
+[INFO] === STARTING AUTONOMOUS INVENTORY MANAGER (MAPE-K) ===
+[INFO] Goal: service level >= 0.95
+[INFO] Initial budget: 10000.00
+[INFO] Daily budget limit: 10000.00
+
+============================================================
+DAY 1
+============================================================
+Lost sales (units)      : 0
+Fill rate (daily)       : 1.0
+Budget spend (plan)     : 0.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 10000.0
+Utility (planned)       : -1608.0
+
+============================================================
+DAY 2
+============================================================
+Lost sales (units)      : 0
+Fill rate (daily)       : 1.0
+Budget spend (plan)     : 3090.0
+Budget spend (exec)     : 3090.0
+Budget remaining        : 6910.0
+Utility (planned)       : 84651.49
+[INFO] Orders placed: [{'sku': 'SKU_003', 'qty': 50, 'lead_time': 1, 'spend': 2775.0}, {'sku': 'SKU_004', 'qty': 25, 'lead_time': 2, 'spend': 315.0}]
+
+============================================================
+DAY 3
+============================================================
+Lost sales (units)      : 1
+Fill rate (daily)       : 0.995
+Budget spend (plan)     : 3990.0
+Budget spend (exec)     : 3990.0
+Budget remaining        : 2920.0
+Utility (planned)       : 82641.61
+[INFO] Orders placed: [{'sku': 'SKU_003', 'qty': 50, 'lead_time': 2, 'spend': 2775.0}, {'sku': 'SKU_004', 'qty': 100, 'lead_time': 1, 'spend': 1215.0}]
+
+============================================================
+DAY 4
+============================================================
+Lost sales (units)      : 33
+Fill rate (daily)       : 0.831
+Budget spend (plan)     : 5365.0
+Budget spend (exec)     : 1215.0
+Budget remaining        : 1705.0
+Utility (planned)       : 55432.87
+[INFO] Orders placed: [{'sku': 'SKU_004', 'qty': 100, 'lead_time': 1, 'spend': 1215.0}]
+
+============================================================
+DAY 5
+============================================================
+Lost sales (units)      : 98
+Fill rate (daily)       : 0.446
+Budget spend (plan)     : 9190.0
+Budget spend (exec)     : 915.0
+Budget remaining        : 790.0
+Utility (planned)       : 38609.29
+[INFO] Orders placed: [{'sku': 'SKU_004', 'qty': 75, 'lead_time': 1, 'spend': 915.0}]
+
+============================================================
+DAY 6
+============================================================
+Lost sales (units)      : 66
+Fill rate (daily)       : 0.532
+Budget spend (plan)     : 8890.0
+Budget spend (exec)     : 615.0
+Budget remaining        : 175.0
+Utility (planned)       : 24412.48
+[INFO] Orders placed: [{'sku': 'SKU_004', 'qty': 50, 'lead_time': 1, 'spend': 615.0}]
+
+============================================================
+DAY 7
+============================================================
+Lost sales (units)      : 74
+Fill rate (daily)       : 0.57
+Budget spend (plan)     : 8890.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : 7904.84
+
+============================================================
+DAY 8
+============================================================
+Lost sales (units)      : 121
+Fill rate (daily)       : 0.209
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6483.96
+
+============================================================
+DAY 9
+============================================================
+Lost sales (units)      : 178
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6964.56
+
+============================================================
+DAY 10
+============================================================
+Lost sales (units)      : 147
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6963.34
+
+============================================================
+DAY 11
+============================================================
+Lost sales (units)      : 179
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7016.85
+
+============================================================
+DAY 12
+============================================================
+Lost sales (units)      : 194
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6932.65
+
+============================================================
+DAY 13
+============================================================
+Lost sales (units)      : 168
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7234.07
+
+============================================================
+DAY 14
+============================================================
+Lost sales (units)      : 151
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7075.03
+
+============================================================
+DAY 15
+============================================================
+Lost sales (units)      : 208
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6936.1
+
+============================================================
+DAY 16
+============================================================
+Lost sales (units)      : 182
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6813.67
+
+============================================================
+DAY 17
+============================================================
+Lost sales (units)      : 176
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7319.52
+
+============================================================
+DAY 18
+============================================================
+Lost sales (units)      : 185
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7153.76
+
+============================================================
+DAY 19
+============================================================
+Lost sales (units)      : 198
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6592.38
+[WARN] Anomalies: {'SKU_004': {'type': 'spike', 'z': 2.0630757152938366, 'today': 93.0, 'mean': 71.0}}
+
+============================================================
+DAY 20
+============================================================
+Lost sales (units)      : 174
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7814.74
+
+============================================================
+DAY 21
+============================================================
+Lost sales (units)      : 198
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7797.67
+
+============================================================
+DAY 22
+============================================================
+Lost sales (units)      : 207
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7961.45
+
+============================================================
+DAY 23
+============================================================
+Lost sales (units)      : 129
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9684.94
+[WARN] Anomalies: {'SKU_001': {'type': 'spike', 'z': 2.100455620801268, 'today': 28.0, 'mean': 19.571428571428573}}
+
+============================================================
+DAY 24
+============================================================
+Lost sales (units)      : 190
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8701.12
+
+============================================================
+DAY 25
+============================================================
+Lost sales (units)      : 169
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8869.19
+
+============================================================
+DAY 26
+============================================================
+Lost sales (units)      : 205
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9124.07
+
+============================================================
+DAY 27
+============================================================
+Lost sales (units)      : 144
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9007.85
+
+============================================================
+DAY 28
+============================================================
+Lost sales (units)      : 187
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9757.91
+
+============================================================
+DAY 29
+============================================================
+Lost sales (units)      : 198
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9853.53
+
+============================================================
+DAY 30
+============================================================
+Lost sales (units)      : 217
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9645.72
+
+============================================================
+DAY 31
+============================================================
+Lost sales (units)      : 165
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9349.13
+
+============================================================
+DAY 32
+============================================================
+Lost sales (units)      : 213
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9141.98
+
+============================================================
+DAY 33
+============================================================
+Lost sales (units)      : 175
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9275.65
+
+============================================================
+DAY 34
+============================================================
+Lost sales (units)      : 176
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8943.38
+
+============================================================
+DAY 35
+============================================================
+Lost sales (units)      : 155
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8800.38
+
+============================================================
+DAY 36
+============================================================
+Lost sales (units)      : 196
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8638.21
+[WARN] Anomalies: {'SKU_002': {'type': 'drop', 'z': -2.6057783363474387, 'today': 21.0, 'mean': 35.5}}
+
+============================================================
+DAY 37
+============================================================
+Lost sales (units)      : 204
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8577.76
+
+============================================================
+DAY 38
+============================================================
+Lost sales (units)      : 197
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8386.17
+
+============================================================
+DAY 39
+============================================================
+Lost sales (units)      : 205
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8200.13
+
+============================================================
+DAY 40
+============================================================
+Lost sales (units)      : 170
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8421.42
+
+============================================================
+DAY 41
+============================================================
+Lost sales (units)      : 157
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8345.23
+
+============================================================
+DAY 42
+============================================================
+Lost sales (units)      : 234
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7920.58
+[WARN] Anomalies: {'SKU_004': {'type': 'drop', 'z': -2.0154388256008526, 'today': 49.0, 'mean': 75.57142857142857}}
+
+============================================================
+DAY 43
+============================================================
+Lost sales (units)      : 190
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 9490.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9249.58
+[WARN] Anomalies: {'SKU_003': {'type': 'spike', 'z': 2.0179800162557617, 'today': 86.0, 'mean': 60.5}}
+
+============================================================
+DAY 44
+============================================================
+Lost sales (units)      : 172
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8391.03
+
+============================================================
+DAY 45
+============================================================
+Lost sales (units)      : 161
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8500.8
+
+============================================================
+DAY 46
+============================================================
+Lost sales (units)      : 208
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8396.97
+
+============================================================
+DAY 47
+============================================================
+Lost sales (units)      : 174
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7877.87
+
+============================================================
+DAY 48
+============================================================
+Lost sales (units)      : 175
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8213.8
+
+============================================================
+DAY 49
+============================================================
+Lost sales (units)      : 139
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8749.06
+
+============================================================
+DAY 50
+============================================================
+Lost sales (units)      : 183
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9145.96
+[WARN] Anomalies: {'SKU_004': {'type': 'drop', 'z': -2.1961553982561597, 'today': 32.0, 'mean': 69.78571428571429}}
+
+============================================================
+DAY 51
+============================================================
+Lost sales (units)      : 135
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8773.23
+
+============================================================
+DAY 52
+============================================================
+Lost sales (units)      : 164
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8364.39
+
+============================================================
+DAY 53
+============================================================
+Lost sales (units)      : 146
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8601.17
+
+============================================================
+DAY 54
+============================================================
+Lost sales (units)      : 167
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8118.87
+
+============================================================
+DAY 55
+============================================================
+Lost sales (units)      : 153
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8385.77
+
+============================================================
+DAY 56
+============================================================
+Lost sales (units)      : 149
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8071.48
+
+============================================================
+DAY 57
+============================================================
+Lost sales (units)      : 167
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7586.1
+
+============================================================
+DAY 58
+============================================================
+Lost sales (units)      : 202
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7237.33
+
+============================================================
+DAY 59
+============================================================
+Lost sales (units)      : 189
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6967.58
+
+============================================================
+DAY 60
+============================================================
+Lost sales (units)      : 148
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6945.55
+
+============================================================
+DAY 61
+============================================================
+Lost sales (units)      : 166
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7082.54
+
+============================================================
+DAY 62
+============================================================
+Lost sales (units)      : 208
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7265.16
+
+============================================================
+DAY 63
+============================================================
+Lost sales (units)      : 150
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 9490.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7458.82
+[WARN] Anomalies: {'SKU_003': {'type': 'spike', 'z': 2.0974363416705226, 'today': 83.0, 'mean': 51.142857142857146}}
+
+============================================================
+DAY 64
+============================================================
+Lost sales (units)      : 211
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6560.96
+
+============================================================
+DAY 65
+============================================================
+Lost sales (units)      : 157
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7138.92
+
+============================================================
+DAY 66
+============================================================
+Lost sales (units)      : 239
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -6954.71
+
+============================================================
+DAY 67
+============================================================
+Lost sales (units)      : 170
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7477.97
+[WARN] Anomalies: {'SKU_001': {'type': 'spike', 'z': 2.787933460524531, 'today': 27.0, 'mean': 19.357142857142858}, 'SKU_004': {'type': 'spike', 'z': 2.276247359999816, 'today': 106.0, 'mean': 72.57142857142857}}
+
+============================================================
+DAY 68
+============================================================
+Lost sales (units)      : 114
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7421.0
+
+============================================================
+DAY 69
+============================================================
+Lost sales (units)      : 166
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -7144.42
+[WARN] Anomalies: {'SKU_004': {'type': 'drop', 'z': -2.2092220944165395, 'today': 31.0, 'mean': 70.07142857142857}}
+
+============================================================
+DAY 70
+============================================================
+Lost sales (units)      : 241
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7340.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8003.93
+
+============================================================
+DAY 71
+============================================================
+Lost sales (units)      : 176
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8432.25
+
+============================================================
+DAY 72
+============================================================
+Lost sales (units)      : 185
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8805.51
+
+============================================================
+DAY 73
+============================================================
+Lost sales (units)      : 209
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9138.56
+
+============================================================
+DAY 74
+============================================================
+Lost sales (units)      : 192
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9366.0
+
+============================================================
+DAY 75
+============================================================
+Lost sales (units)      : 193
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9204.62
+
+============================================================
+DAY 76
+============================================================
+Lost sales (units)      : 197
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8768.9
+
+============================================================
+DAY 77
+============================================================
+Lost sales (units)      : 194
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8711.08
+
+============================================================
+DAY 78
+============================================================
+Lost sales (units)      : 188
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9081.53
+
+============================================================
+DAY 79
+============================================================
+Lost sales (units)      : 197
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8990.87
+
+============================================================
+DAY 80
+============================================================
+Lost sales (units)      : 148
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9148.6
+
+============================================================
+DAY 81
+============================================================
+Lost sales (units)      : 209
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8754.49
+
+============================================================
+DAY 82
+============================================================
+Lost sales (units)      : 158
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8915.83
+
+============================================================
+DAY 83
+============================================================
+Lost sales (units)      : 180
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9024.02
+
+============================================================
+DAY 84
+============================================================
+Lost sales (units)      : 207
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8332.85
+
+============================================================
+DAY 85
+============================================================
+Lost sales (units)      : 212
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 9490.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -9357.08
+[WARN] Anomalies: {'SKU_003': {'type': 'spike', 'z': 2.5535816251395547, 'today': 94.0, 'mean': 58.785714285714285}}
+
+============================================================
+DAY 86
+============================================================
+Lost sales (units)      : 204
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -12410.98
+[WARN] Anomalies: {'SKU_002': {'type': 'spike', 'z': 2.2807088492445207, 'today': 56.0, 'mean': 35.285714285714285}}
+
+============================================================
+DAY 87
+============================================================
+Lost sales (units)      : 187
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8725.73
+
+============================================================
+DAY 88
+============================================================
+Lost sales (units)      : 191
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8681.92
+
+============================================================
+DAY 89
+============================================================
+Lost sales (units)      : 145
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8473.65
+
+============================================================
+DAY 90
+============================================================
+Lost sales (units)      : 157
+Fill rate (daily)       : 0.0
+Budget spend (plan)     : 7940.0
+Budget spend (exec)     : 0.0
+Budget remaining        : 175.0
+Utility (planned)       : -8709.66
+
+============================================================
+SIMULATION COMPLETE
+Final Budget: 175.00
+Overall Fill Rate: 0.0646
+Per-SKU Fill Rate:
+  SKU_001: 0.0676 (lost units: 1656)
+  SKU_002: 0.0390 (lost units: 2958)
+  SKU_003: 0.0532 (lost units: 4629)
+  SKU_004: 0.0846 (lost units: 5954)
+============================================================

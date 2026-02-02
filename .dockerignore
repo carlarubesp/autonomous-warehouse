@@ -1,0 +1,14 @@
+# No copiar estas carpetas al contenedor
+grafana/
+results/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.git/
+.vscode/
+*.md
+*.log
+*.csv
+!requirements.txt

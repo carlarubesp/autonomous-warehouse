@@ -1,0 +1,4 @@
+[INFO] === STARTING AUTONOMOUS INVENTORY MANAGER (MAPE-K) ===
+[INFO] Goal: service level >= 0.95
+[INFO] Initial budget: 100000.00
+[INFO] Daily budget limit: 15000.00

@@ -1,0 +1,17 @@
+﻿apiVersion: 1
+
+datasources:
+  - uid: influxdb
+    name: InfluxDB
+    type: influxdb
+    access: proxy
+    url: http://influxdb:8086
+    jsonData:
+      version: Flux
+      organization: mape-k-inventory-org
+      defaultBucket: inventory-metrics
+      tlsSkipVerify: true
+    secureJsonData:
+      token: my-super-secret-token
+    isDefault: true
+    editable: false

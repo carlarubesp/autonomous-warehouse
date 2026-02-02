@@ -1,0 +1,55 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    container_name: mape-k-inventory
+    depends_on:
+      - influxdb
+    environment:
+      INFLUXDB_URL: http://influxdb:8086
+      INFLUXDB_TOKEN: my-super-secret-token
+      INFLUXDB_ORG: mape-k-inventory-org
+      INFLUXDB_BUCKET: inventory-metrics
+    networks:
+      - warehouse-net
+
+  influxdb:
+    image: influxdb:2.7
+    container_name: mape-k-inventory-influxdb
+    ports:
+      - "8086:8086"
+    environment:
+      DOCKER_INFLUXDB_INIT_MODE: setup
+      DOCKER_INFLUXDB_INIT_USERNAME: admin
+      DOCKER_INFLUXDB_INIT_PASSWORD: adminpassword123
+      DOCKER_INFLUXDB_INIT_ORG: mape-k-inventory-org
+      DOCKER_INFLUXDB_INIT_BUCKET: inventory-metrics
+      DOCKER_INFLUXDB_INIT_ADMIN_TOKEN: my-super-secret-token
+    volumes:
+      - influxdb-data:/var/lib/influxdb2
+    networks:
+      - warehouse-net
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: mape-k-inventory-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      GF_SECURITY_ADMIN_PASSWORD: admin
+      GF_INSTALL_PLUGINS: ""
+    volumes:
+      - grafana-data:/var/lib/grafana
+    depends_on:
+      - influxdb
+    networks:
+      - warehouse-net
+
+networks:
+  warehouse-net:
+    driver: bridge
+
+volumes:
+  influxdb-data:
+  grafana-data:
