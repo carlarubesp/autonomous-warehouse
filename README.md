@@ -16,7 +16,8 @@ The system is composed of independent components orchestrated with Docker Compos
 
 - **App (Python)**: Implements the MAPE-K loop, demand simulation, planning, and execution logic.
 - **InfluxDB**: Time-series database used to store KPIs and historical metrics.
-- **Telemetry layer**: Designed to support asynchronous KPI publishing (e.g., MQTT) and persistent storage via InfluxDB.
+- **Grafana**: Visualization platform connected to InfluxDB for real-time dashboards.
+- **Telemetry layer**: Designed to support asynchronous KPI publishing and persistent storage via InfluxDB.
 
 Each component runs in its own container where applicable, allowing clean modularity and easy experimentation.
 
@@ -72,6 +73,7 @@ autonomous-warehouse/
 ├── knowledge/             # System state and historical data
 ├── telemetry/             # InfluxDB telemetry integration
 ├── utils/                 # Shared utilities
+├── grafana/               # Grafana provisioning and dashboards
 ├── main.py                # Entry point
 ├── config.py              # Global configuration
 ├── Dockerfile
@@ -81,6 +83,7 @@ autonomous-warehouse/
 ├── results/               # Simulation outputs and CSV metrics
 └── README.md
 ```
+
 ## How to Run
 
 ### Requirements
@@ -90,38 +93,95 @@ autonomous-warehouse/
 
 ### Steps
 
-1. Clone the repository
-2. (Optional) Create a `.env` file based on `.env.example`
-3. Run:
+1. Clone the repository.
+2. (Optional) Create a `.env` file based on `.env.example`.
+3. Run the complete stack:
 
 ```bash
 docker compose up --build
 ```
-This starts all services and runs the autonomous simulation. Daily decisions and KPIs are printed to the console.
 
+## Visualization & Monitoring
+
+Once the containers are running, you can access the visualization tools to analyze the simulation results in real-time.
+1. Grafana (Dashboards)
+    - URL: http://localhost:3000
+    - User: admin
+    - Password: admin
+    - Instructions:
+        1. Log in with the credentials above.
+        2. Navigate to Dashboards > MAPE-K Inventory.
+        3. Open the Warehouse MAPE-K Metrics dashboard to view pre-configured plots for Fill Rate, Stock Levels, and Revenue.
+
+2. InfluxDB (Data Explorer)
+    - URL: http://localhost:8086
+    - User: admin
+    - Password: adminpassword123
+    - Organization: mape-k-inventory-org
+    - Bucket: inventory-metrics
+    - Token: my-super-secret-token
+
+
+## Data Analysis (Flux Queries)
+You can perform deep-dive analysis using the InfluxDB Data Explorer or by creating custom panels in Grafana. Use the following Flux queries to extract specific metrics.
+
+Note: The queries below filter for the baseline scenario over the last 92 days. You can change r.scenario == "baseline" to "high_demand" or "supply_issues" to analyze different scenarios.
+
+### Revenue (Daily)
+Visualizes the daily revenue fluctuation.
+
+```bash
+from(bucket: "inventory-metrics")
+  |> range(start: -92d)
+  |> filter(fn: (r) => r._measurement == "daily_metrics")
+  |> filter(fn: (r) => r._field == "revenue")
+  |> filter(fn: (r) => r.scenario == "baseline")
+```
+
+### Fill Rate (Service Level)
+Tracks the daily service level (1.0 means 100% demand fulfilled).
+
+```bash
+from(bucket: "inventory-metrics")
+  |> range(start: -92d)
+  |> filter(fn: (r) => r._measurement == "daily_metrics")
+  |> filter(fn: (r) => r._field == "fill_rate")
+  |> filter(fn: (r) => r.scenario == "baseline")
+```
+
+### Stock Total
+Monitors the total inventory units held in the warehouse.
+
+```bash
+from(bucket: "inventory-metrics")
+  |> range(start: -92d)
+  |> filter(fn: (r) => r._measurement == "daily_metrics")
+  |> filter(fn: (r) => r._field == "stock_total")
+  |> filter(fn: (r) => r.scenario == "baseline")
+```
+
+### Lost Sales (Non-Zero Only)
+Filters for days where demand was not met.
+
+Important: If this query returns no data or very few points, it is a positive result. It means the autonomous manager is successfully preventing stockouts.
+
+```bash
+from(bucket: "inventory-metrics")
+  |> range(start: -92d)
+  |> filter(fn: (r) => r._measurement == "daily_metrics")
+  |> filter(fn: (r) => r._field == "lost_sales")
+  |> filter(fn: (r) => r.scenario == "baseline")
+  |> filter(fn: (r) => r._value > 0)
+```
 
 ## Validation
+The system was validated through long simulation runs (90 simulated days) across multiple demand scenarios. Observed results include:
+- Service levels consistently above the target threshold (≈ 0.95).
+- Reduced lost sales over time.
+- Stable ordering behavior (controlled bullwhip effect).
+- Positive overall margin.
 
-The system was validated through long simulation runs (90+ simulated days) across multiple demand scenarios. Observed results include:
-
-- Service levels consistently above the target threshold (≈ 0.95)
-- Reduced lost sales over time
-- Stable ordering behavior (controlled bullwhip effect)
-- Positive overall margin
-
-Simulation outputs and aggregated metrics are provided as CSV files for further analysis and comparison.
-
-
-## Limitations and Future Work
-
-- Add a Grafana dashboard for real-time KPI visualization
-- Compare performance against simple baseline policies (e.g., reorder point)
-- Extend the model to stochastic lead times
-- Support multi-warehouse or multi-supplier scenarios
-- Integrate a fully containerized MQTT broker for real-time telemetry
-
----
+Simulation outputs and aggregated metrics are provided as CSV files in the results/ directory for further analysis and comparison.
 
 ## Conclusion
-
 This project demonstrates how autonomous control, optimization techniques, and containerized architectures can be combined to manage complex inventory systems in a simulated environment. The modular design enables experimentation with planning strategies, demand scenarios, and control policies, making it suitable for academic evaluation and further extension.

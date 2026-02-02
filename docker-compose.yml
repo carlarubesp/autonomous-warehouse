@@ -13,6 +13,8 @@ services:
       INFLUXDB_BUCKET: inventory-metrics
     networks:
       - warehouse-net
+    volumes:
+      - ./results:/app/results
 
   influxdb:
     image: influxdb:2.7
